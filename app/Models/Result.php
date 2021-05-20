@@ -11,7 +11,7 @@ class Result extends Model
 
     protected $fillable = [
         'user_id',
-        'test_id',
+        'slug',
         'bucket_id',
         'question_id',
         'result'

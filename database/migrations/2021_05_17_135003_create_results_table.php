@@ -16,7 +16,7 @@ class CreateResultsTable extends Migration
         Schema::create('results', function (Blueprint $table) {
             $table->id();
             $table->bigInteger('user_id');
-            $table->bigInteger('test_id');
+            $table->string('slug');
             $table->bigInteger('bucket_id');
             $table->bigInteger('question_id');
             $table->string('result');

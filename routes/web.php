@@ -18,9 +18,11 @@ Route::get('/', function () {
 });
 */
 
-use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\IndexController;
+use App\Http\Controllers\TestController;
 
 Route::get('/', IndexController::class);
+Route::get('/test/{slug}', [TestController::class, 'show']);
 
 
 Auth::routes();

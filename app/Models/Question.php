@@ -12,7 +12,7 @@ class Question extends Model
     public $timestamps = false;
 
     protected $fillable = [
-        'test_id',
+        'slug',
         'bucket_id',
         'question',
     ];
